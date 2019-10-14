@@ -1,0 +1,17 @@
+{
+  "name": "vulnerable-oak",
+  "version": "1.0.0",
+  "description": "An vulnerable test application for demonstration purposes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Alexander Eriksen",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.4.3",
+    "hbs": "^4.0.6"
+  }
+}
