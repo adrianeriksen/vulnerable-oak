@@ -11,25 +11,40 @@
 <body>
   <h1>Oak Microblog Engine</h1>
 
-  <ul>
-    {{#each posts}}
-    <li>{{{this.content}}}</li>
-    {{/each}}
-  </ul>
+  <div class="grid-container">
+    <div class="grid-main-item">
+      {{#each posts}}
+      <div class="post">
+        <div class="post-content">
+          {{{this.content}}}
+        </div>
+        <div class="post-author">
+          🤓 {{this.author}}
+        </div>
+      </div>
+      {{/each}}
 
-  <form action="/posts" method="POST">
-    <div class="form-group">
-      <label>Author</label>
-      <input type="text" name="author" id="field-author" />
+
+      <form action="/posts" method="POST">
+        <div class="form-group">
+          <label>Author</label>
+          <input type="text" name="author" id="field-author" />
+        </div>
+
+        <div class="form-group">
+          <label>Content</label>
+          <input type="text" name="content" id="field-content" />
+        </div>
+
+        <button type="submit">Share rant!</button>
+      </form>
     </div>
 
-    <div class="form-group">
-      <label>Content</label>
-      <input type="text" name="content" id="field-content" />
+    <div class="grid-side-item">
+      <iframe src="https://www.youtube.com/embed/F_1gqm4T03g" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-
-    <button type="submit">Share rant!</button>
-  </form>
+  </div>
 </body>
 
 </html>

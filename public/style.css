@@ -1,4 +1,74 @@
-html {
+body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 120%;
+  background-color: whitesmoke;
+}
+
+h1 {
+  font-weight: 300;
+  margin-left: 60px;
+}
+
+.grid-container {
+  margin-left: 60px;
+  max-width: 960px;
+  display: grid;
+  grid-column-gap: 40px;
+}
+
+.grid-main-item {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-side-item {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.grid-side-item > iframe {
+  width: 100%;
+  height: 250px;
+  margin: 1.4rem 0;
+}
+
+.post {
+  margin: 1.4rem 0;
+}
+
+.post .post-content {
+  margin-bottom: 0.2rem;
+}
+
+.post .post-author {
+  color: olivedrab;
+}
+
+form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.2rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.3rem 0.4rem;
+  font-size: inherit;
+}
+
+form button {
+  background-color: steelblue;
+  color: whitesmoke;
+  font-size: 90%;
+  border: none;
+  padding: 0.5rem 0.6rem;
+}
+
+form button:hover {
+  background-color: palevioletred;
+}
+
+.form-group {
+  margin: 0.7rem 0;
 }
