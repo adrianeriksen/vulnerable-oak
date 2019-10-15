@@ -10,6 +10,7 @@ app.set("view engine", "hbs");
 app.set("views", `${__dirname}/views`);
 
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
 
 let nextId = 4;
 
@@ -31,7 +32,7 @@ const database = [
   }
 ];
 
-app.get("/", res => res.redirect(302, "/posts"));
+app.get("/", (_, res) => res.redirect(302, "/posts"));
 
 app.get("/posts", (req, res) => {
   res.locals = {
