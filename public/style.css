@@ -33,6 +33,10 @@ h1 {
   margin: 1.4rem 0;
 }
 
+.grid-side-item > img {
+  width: 100%;
+}
+
 .post {
   margin: 1.4rem 0;
 }
